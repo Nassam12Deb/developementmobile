@@ -34,16 +34,21 @@ class PageAccueil extends StatelessWidget {
           ),
         ],
       ),
-      body: const Column(
-        children: [
-          Image(
-            image: AssetImage('assets/images/magazineInfo.jpg'),
-          ),
-          PartieTitre(),
-          PartieTexte(),
-          PartieIcone(),
-          PartieRubrique(),
-        ],
+      body: const SingleChildScrollView(
+        child: Column(
+          children: [
+            Image(
+              image: AssetImage('assets/images/magazineInfo.jpg'),
+              height: 200,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
+            PartieTitre(),
+            PartieTexte(),
+            PartieIcone(),
+            PartieRubrique(),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.blue,
