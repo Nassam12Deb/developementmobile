@@ -23,3 +23,5 @@ flutter:
 
   assets:
     - assets/images/magazineInfo.jpg
+    - assets/images/presse.jpg
+    - assets/images/mode.jpg
