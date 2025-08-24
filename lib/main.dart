@@ -35,6 +35,8 @@ class PageAccueil extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(),
+        padding: const EdgeInsets.only(bottom: 80.0), // Espace pour le FAB
         child: Column(
           children: [
             ResponsiveImage(),
@@ -42,6 +44,7 @@ class PageAccueil extends StatelessWidget {
             PartieTexte(),
             PartieIcone(),
             PartieRubrique(),
+            const SizedBox(height: 20), // Espace supplémentaire en bas
           ],
         ),
       ),
